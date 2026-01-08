@@ -2380,11 +2380,8 @@ section,
 # Testimonials Section
 --------------------------------------------------------------*/
 
-.testimonials{
-  padding: 0 30px;
-}
 .testimonials .testimonials-slider {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   position: relative;
 }
@@ -2394,7 +2391,7 @@ section,
 }
 
 .testimonials .testimonial-slide {
-  padding: 2.5rem 2rem;
+  padding: 1.5rem 2rem;
   text-align: center;
   position: relative;
   min-height: 300px;
@@ -3658,9 +3655,6 @@ section,
   margin-bottom: 0.25rem;
 }
 
-.info-itemize{
-
-}
 
 .service-details .service-sidebar .testimonial-block .testimonial-author .author-info span {
   font-size: 0.9rem;
@@ -3723,9 +3717,3 @@ section,
   }
 }
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
