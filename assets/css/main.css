@@ -2384,7 +2384,7 @@ section,
   padding: 0 30px;
 }
 .testimonials .testimonials-slider {
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto;
   position: relative;
 }
@@ -2397,7 +2397,7 @@ section,
   padding: 2.5rem 2rem;
   text-align: center;
   position: relative;
-  min-height: 400px;
+  min-height: 300px;
   border-radius: 25px;
   background: linear-gradient(135deg, var(--surface-color), color-mix(in srgb, var(--accent-color), transparent 97%));
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
