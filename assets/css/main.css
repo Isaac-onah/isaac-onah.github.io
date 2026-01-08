@@ -2390,7 +2390,7 @@ section,
 }
 
 .testimonials .testimonial-slide {
-  padding: 3.5rem 3rem;
+  padding: 2.5rem 2rem;
   text-align: center;
   position: relative;
   min-height: 400px;
@@ -2404,7 +2404,7 @@ section,
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .testimonials .stars-rating {
@@ -2434,7 +2434,7 @@ section,
 }
 
 .testimonials .testimonial-body {
-  margin: 2.5rem 0;
+  margin: 0.5rem 0;
 }
 
 .testimonials .testimonial-body p {
@@ -2447,7 +2447,7 @@ section,
 }
 
 .testimonials .testimonial-footer {
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
 }
 
 .testimonials .author-info {
