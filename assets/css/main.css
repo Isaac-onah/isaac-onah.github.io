@@ -2079,6 +2079,7 @@ section,
   height: 300px;
   object-fit: cover;
   transition: all 0.6s ease;
+  aspect-ratio: 4 / 3;
 }
 
 @media (max-width: 768px) {
@@ -2200,7 +2201,7 @@ section,
   }
 }
 
-.portfolio .isotope-container .portfolio-item:nth-child(4) .portfolio-image img {
+/* .portfolio .isotope-container .portfolio-item:nth-child(4) .portfolio-image img {
   height: 280px;
 }
 
@@ -2208,7 +2209,7 @@ section,
   .portfolio .isotope-container .portfolio-item:nth-child(4) .portfolio-image img {
     height: 250px;
   }
-}
+} */
 
 @media (max-width: 992px) {
   .portfolio {

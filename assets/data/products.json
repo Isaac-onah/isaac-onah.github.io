@@ -1,0 +1,50 @@
+[
+    {
+      "id": "sustainable-living",
+      "title": "Sustainable Living Platform",
+      "category": "Digital Design",
+      "year": "2024",
+      "summary": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit...",
+      "tags": ["UI/UX Design", "Sustainability", "Platform"],
+      "heroImage": "assets/img/portfolio/portfolio-3.webp",
+      "gallery": [
+        "assets/img/portfolio/portfolio-7.webp",
+        "assets/img/portfolio/portfolio-5.webp",
+        "assets/img/portfolio/portfolio-8.webp"
+      ],
+      "content": [
+        {
+          "heading": "Design Philosophy",
+          "paragraphs": [
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem...",
+            "Nemo enim ipsam voluptatem quia voluptas sit aspernatur...",
+            "Ut enim ad minima veniam quis nostrum exercitationem..."
+          ]
+        }
+      ],
+      "specs": {
+        "Client": "EcoLife Solutions",
+        "Timeline": "8 Months",
+        "My Role": "Product Designer",
+        "Team": "7 Members",
+        "Deliverables": "Web Platform, Mobile App"
+      },
+      "process": [
+        {"step": 1, "title": "Research & Analysis", "description": "..."},
+        {"step": 2, "title": "Ideation & Concepts", "description": "..."},
+        {"step": 3, "title": "Prototyping & Testing", "description": "..."},
+        {"step": 4, "title": "Implementation & Launch", "description": "..."}
+      ],
+      "tools": {
+        "Design": ["Figma", "Sketch", "Adobe XD", "Principle"],
+        "Development": ["React", "Node.js", "MongoDB"],
+        "Analytics": ["Hotjar", "Mixpanel", "Google Analytics"]
+      },
+      "impact": [
+        {"label": "User Satisfaction", "value": "92%"},
+        {"label": "Monthly Users", "value": "18k+"},
+        {"label": "App Store Rating", "value": "4.9"},
+        {"label": "Conversion Increase", "value": "65%"}
+      ]
+    }
+  ]
