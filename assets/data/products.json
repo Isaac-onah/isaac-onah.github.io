@@ -37,7 +37,7 @@
       {
         "step": 3,
         "title": "Reactive Services",
-        "description": "Built signal-based services (ExperienceService, CategoryService) that expose computed filtered lists, combined search results across experiences and locations, and date-range filtering — all derived automatically from a handful of source signals."
+        "description": "Built signal-based services (ExperienceService,b CategoryService) that expose computed filtered lists, combined search results across experiences and locations, and date-range filtering — all derived automatically from a handful of source signals."
       },
       {
         "step": 4,
