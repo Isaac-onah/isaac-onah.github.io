@@ -32,7 +32,7 @@
       {
         "step": 2,
         "title": "Data Modelling",
-        "description": "Designed TypeScript interfaces for Experience, EventResponse, Category, PassType, Occurrence, and geospatial types (GeoJSONPoint, Location) to strictly type all API responses."
+        "description": "Designed TypeScript interfaces for more Experience, EventResponse, Category, PassType, Occurrence, and geospatial types (GeoJSONPoint, Location) to strictly type all API responses."
       },
       {
         "step": 3,
