@@ -1,50 +1,55 @@
 [
-    {
-      "id": "sustainable-living",
-      "title": "Sustainable Living Platform",
-      "category": "Digital Design",
-      "year": "2024",
-      "summary": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit...",
-      "tags": ["UI/UX Design", "Sustainability", "Platform"],
-      "heroImage": "assets/img/portfolio/portfolio-3.webp",
-      "gallery": [
-        "assets/img/portfolio/portfolio-7.webp",
-        "assets/img/portfolio/portfolio-5.webp",
-        "assets/img/portfolio/portfolio-8.webp"
-      ],
-      "content": [
-        {
-          "heading": "Design Philosophy",
-          "paragraphs": [
-            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem...",
-            "Nemo enim ipsam voluptatem quia voluptas sit aspernatur...",
-            "Ut enim ad minima veniam quis nostrum exercitationem..."
-          ]
-        }
-      ],
-      "specs": {
-        "Client": "EcoLife Solutions",
-        "Timeline": "8 Months",
-        "My Role": "Product Designer",
-        "Team": "7 Members",
-        "Deliverables": "Web Platform, Mobile App"
+  {
+    "id": "localway-web",
+    "title": "Localway – Local Experiences & Events Platform",
+    "category": "Web Development",
+    "year": "2025",
+    "summary": "Localway is a full-featured Angular web application that connects users with local experiences and events in Malta and Gozo. The platform offers real-time filtering, multi-language support, category browsing, wishlist management, a booking flow with cart and pass-types, and an interactive map-based location layer.",
+    "tags": ["Angular", "TypeScript", "Tailwind CSS", "RxJS", "REST API"],
+    "content": [
+      {
+        "heading": "Project Overview",
+        "paragraphs": [
+          "Localway is a consumer-facing discovery platform built entirely with Angular 20 standalone components and Angular Signals for reactive state management. It lets users browse, search, filter, and book local experiences and events.",
+          "The app communicates with a RESTful backend (via HttpClient), supports paginated experience listings, geolocation-based results, and a rich detail view per experience — complete with itinerary, FAQs, pass-types, and media galleries.",
+          "Internationalisation is baked in at the data-model level: every piece of user-facing text (titles, descriptions, category names) is stored as a LocalizedString array and resolved at render-time through a dedicated LanguageService, with English and Italian as supported languages."
+        ]
+      }
+    ],
+    "specs": {
+      "Platform": "Web (SPA)",
+      "Framework": "Angular 20",
+      "Styling": "Tailwind CSS v3",
+      "Language": "TypeScript 5.8",
+      "State Management": "Angular Signals"
+    },
+    "process": [
+      {
+        "step": 1,
+        "title": "Architecture & Routing",
+        "description": "Defined a clean route hierarchy covering home, category explore, experience detail, bookings, wishlist, cart, profile (auth-guarded), and a full set of static pages (About, Contact, Blog, Legal, etc.)."
       },
-      "process": [
-        {"step": 1, "title": "Research & Analysis", "description": "..."},
-        {"step": 2, "title": "Ideation & Concepts", "description": "..."},
-        {"step": 3, "title": "Prototyping & Testing", "description": "..."},
-        {"step": 4, "title": "Implementation & Launch", "description": "..."}
-      ],
-      "tools": {
-        "Design": ["Figma", "Sketch", "Adobe XD", "Principle"],
-        "Development": ["React", "Node.js", "MongoDB"],
-        "Analytics": ["Hotjar", "Mixpanel", "Google Analytics"]
+      {
+        "step": 2,
+        "title": "Data Modelling",
+        "description": "Designed TypeScript interfaces for Experience, EventResponse, Category, PassType, Occurrence, and geospatial types (GeoJSONPoint, Location) to strictly type all API responses."
       },
-      "impact": [
-        {"label": "User Satisfaction", "value": "92%"},
-        {"label": "Monthly Users", "value": "18k+"},
-        {"label": "App Store Rating", "value": "4.9"},
-        {"label": "Conversion Increase", "value": "65%"}
-      ]
+      {
+        "step": 3,
+        "title": "Reactive Services",
+        "description": "Built signal-based services (ExperienceService, CategoryService) that expose computed filtered lists, combined search results across experiences and locations, and date-range filtering — all derived automatically from a handful of source signals."
+      },
+      {
+        "step": 4,
+        "title": "Feature Delivery",
+        "description": "Shipped a full booking flow (cart → pass-type selection → checkout), wishlist, authentication modal, role-based route guard, media upload, and a shared component library including modals, breadcrumbs, labels, and a time-picker."
+      }
+    ],
+    "tools": {
+      "Frontend": ["Angular 20", "TypeScript", "Tailwind CSS", "RxJS", "ngx-translate", "Font Awesome"],
+      "Charts & UI": ["ApexCharts", "ng-apexcharts", "ng2-nouislider"],
+      "Tooling": ["Angular CLI", "PostCSS", "Karma / Jasmine", "Drone CI"]
     }
+  }
+  
   ]
