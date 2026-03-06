@@ -2188,15 +2188,15 @@ section,
   flex-grow: 1;
 }
 
-.portfolio .isotope-container .portfolio-item:nth-child(1) .portfolio-image img,
-.portfolio .isotope-container .portfolio-item:nth-child(2) .portfolio-image img {
+.portfolio .isotope-container .portfolio-item .portfolio-image img,
+.portfolio .isotope-container .portfolio-item .portfolio-image img {
   height: 350px;
 }
 
 @media (max-width: 768px) {
 
-  .portfolio .isotope-container .portfolio-item:nth-child(1) .portfolio-image img,
-  .portfolio .isotope-container .portfolio-item:nth-child(2) .portfolio-image img {
+  .portfolio .isotope-container .portfolio-item .portfolio-image img,
+  .portfolio .isotope-container .portfolio-item .portfolio-image img {
     height: 280px;
   }
 }
