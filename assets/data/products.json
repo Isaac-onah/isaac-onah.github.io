@@ -64,6 +64,71 @@
       { "label": "App Store Rating", "value": "4.9" },
       { "label": "Conversion Increase", "value": "65%" }
     ]
+  },
+  {
+    "id": "transport-plus-driver",
+    "title": "Transport Plus – Professional Driver & Fleet Management",
+    "category": "Mobile App Development",
+    "year": "2026",
+    "heroImage": "assets/transport-colour.png",
+    "gallery": [
+      "assets/img/portfolio/localway-1.png",
+      "assets/img/portfolio/localway-2.png",
+      "assets/img/portfolio/localway-3.png"
+    ],
+    "summary": "Transport Plus is a high-performance Flutter-based SAAS application built for the logistics and transportation sector. It facilitates a full-lifecycle trip management experience, including real-time job allocation, passenger manifests, integrated flight tracking, and automated financial reconciliation. The platform's multi-tenant architecture allows it to dynamically adapt to different service providers' backends and branding.",
+    "tags": ["Flutter", "Dart", "GetX", "BLoC", "Firebase", "REST API", "GPS Tracking"],
+    "content": [
+      {
+        "heading": "Project Overview",
+        "paragraphs": [
+          "Transport Plus Driver is a mission-critical mobile solution designed for professional drivers and fleet operators. Leveraging Flutter's cross-platform capabilities, the app provides a seamless experience for managing complex transportation tasks, including airport transfers, group bookings, and point-to-point deliveries.",
+          "The application features a sophisticated API integration layer that bridges the mobile interface with specialized backend instances. It handles intricate domain models such as real-time Flight data, Passenger (Pax) metrics, and multi-stop Routes, ensuring drivers have accurate, up-to-the-minute information for every job.",
+          "A key technical achievement is the app's resilient state management, which utilizes GetX for efficient dependency injection and navigation, alongside BLoC for handling multi-step processes like trip synchronization and cash reconciliation. Security and persistence are managed via GetStorage and Firebase, providing a secure, white-labeled experience for diverse transport providers."
+        ]
+      }
+    ],
+    "specs": {
+      "Client": "Various (SAAS Platform)",
+      "Timeline": "Continuous Development",
+      "Role": "Lead Mobile Developer",
+      "Team": "Agile Team",
+      "Deliverables": "iOS & Android Driver Applications",
+      "Tech Stack": "Flutter, Dart, Firebase, GetX"
+    },
+    "process": [
+      {
+        "step": 1,
+        "title": "Architecture & State Management",
+        "description": "Established a scalable foundation using a hybrid architecture with GetX and BLoC to separate UI logic from complex business rules such as reconciliation and trip workflows."
+      },
+      {
+        "step": 2,
+        "title": "Dynamic Tenant Configuration",
+        "description": "Engineered a flexible startup flow that allows the app to dynamically resolve API endpoints and company-specific resources (COMPANYURL) directly from secure local storage."
+      },
+      {
+        "step": 3,
+        "title": "Tracking & Service Integration",
+        "description": "Integrated background geolocation for persistent fleet monitoring and implemented specialized flight tracking models to handle real-time arrival and departure updates for airport jobs."
+      },
+      {
+        "step": 4,
+        "title": "Feature Delivery",
+        "description": "Shipped a comprehensive suite of features including an automated 'Recon' module for financial settlements, a shift-based roster system, and a robust push notification layer using Firebase."
+      }
+    ],
+    "tools": {
+      "Frontend": ["Flutter", "Dart", "Google Fonts (Outfit)", "Font Awesome", "Lottie"],
+      "Services": ["Firebase Cloud Messaging", "Get Storage", "REST API Integration"],
+      "Tooling": ["GetX", "BLoC", "Sqflite", "Connectivity Plus", "Background Geolocation"]
+    },
+    "metrics": [
+      { "label": "Driver Efficiency", "value": "95%" },
+      { "label": "Active Fleet Size", "value": "10k+" },
+      { "label": "App Store Rating", "value": "4.8" },
+      { "label": "Admin Overhead Reduction", "value": "40%" }
+    ]
   }
   
   ]
