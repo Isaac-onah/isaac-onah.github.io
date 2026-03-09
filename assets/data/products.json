@@ -73,9 +73,14 @@
     "id": "transport-plus-driver",
     "title": "Transport Plus – Professional Driver & Fleet Management",
     "category": "Mobile App Development",
-    "year": "2026",
+    "year": "2024",
     "heroImage": "assets/transport-colour.png",
     "gallery": [
+      "assets/img/portfolio/localway-1.png",
+      "assets/img/portfolio/localway-2.png",
+      "assets/img/portfolio/localway-3.png"
+    ],
+    "sliderimages": [
       "assets/img/portfolio/localway-1.png",
       "assets/img/portfolio/localway-2.png",
       "assets/img/portfolio/localway-3.png"
