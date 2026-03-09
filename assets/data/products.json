@@ -4,6 +4,13 @@
     "title": "Localway – Local Experiences & Events Platform",
     "category": "Web Development",
     "year": "2025",
+    "heroImage": "assets/img/portfolio/localway-hero.webp",
+
+    "gallery": [
+      "assets/img/portfolio/localway-1.png",
+      "assets/img/portfolio/localway-2.png",
+      "assets/img/portfolio/localway-3.png"
+    ],
     "summary": "Localway is a full-featured Angular web application that connects users with local experiences and events in Malta and Gozo. The platform offers real-time filtering, multi-language support, category browsing, wishlist management, a booking flow with cart and pass-types, and an interactive map-based location layer.",
     "tags": ["Angular", "TypeScript", "Tailwind CSS", "RxJS", "REST API"],
     "content": [
