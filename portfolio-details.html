@@ -643,7 +643,69 @@
             galleryContainer.appendChild(div);
           });
 
-          // TODO: Repeat similar logic for process, tools, impact, etc.
+          // Process Timeline
+          const timelineContainer = document.querySelector(".timeline-steps");
+          timelineContainer.innerHTML = "";
+
+          product.process.forEach((step, index) => {
+            const div = document.createElement("div");
+            div.className = "timeline-item";
+            div.setAttribute("data-aos", "fade-up");
+            div.setAttribute("data-aos-delay", 150 + index * 50);
+
+            div.innerHTML = `
+              <div class="step-marker">
+                <span class="step-number">${step.step}</span>
+              </div>
+              <div class="step-content">
+                <h4>${step.title}</h4>
+                <p>${step.description}</p>
+              </div>
+            `;
+
+            timelineContainer.appendChild(div);
+          });
+
+          // Tools Section
+          const toolsGrid = document.querySelector(".tools-grid");
+          toolsGrid.innerHTML = "";
+
+          for (const category in product.tools) {
+            const div = document.createElement("div");
+            div.className = "tool-category";
+
+            const tools = product.tools[category]
+              .map(tool => `<span class="tool-item">${tool}</span>`)
+              .join("");
+
+            div.innerHTML = `
+              <h5>${category}</h5>
+              <div class="tool-list">
+                ${tools}
+              </div>
+            `;
+
+            toolsGrid.appendChild(div);
+          }
+
+
+          // Impact Metrics
+          const metricsGrid = document.querySelector(".metrics-grid");
+          metricsGrid.innerHTML = "";
+
+          product.metrics.forEach((metric, index) => {
+            const div = document.createElement("div");
+            div.className = "metric-card";
+            div.setAttribute("data-aos", "fade-up");
+            div.setAttribute("data-aos-delay", 150 + index * 50);
+
+            div.innerHTML = `
+              <div class="metric-value">${metric.value}</div>
+              <div class="metric-label">${metric.label}</div>
+            `;
+
+            metricsGrid.appendChild(div);
+          });
         });
     </script>
   </body>
