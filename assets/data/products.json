@@ -5,8 +5,12 @@
     "category": "Web Development",
     "year": "2025",
     "heroImage": "assets/img/portfolio/localway-hero.webp",
-
     "gallery": [
+      "assets/img/portfolio/localway-1.png",
+      "assets/img/portfolio/localway-2.png",
+      "assets/img/portfolio/localway-3.png"
+    ],
+    "sliderimages": [
       "assets/img/portfolio/localway-1.png",
       "assets/img/portfolio/localway-2.png",
       "assets/img/portfolio/localway-3.png"

@@ -429,70 +429,30 @@
             </div>
           </div>
 
-          <div
-            class="additional-gallery"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
+          <div class="additional-gallery" data-aos="fade-up" data-aos-delay="100">
             <div class="gallery-slider swiper init-swiper">
+          
               <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 4000
-                  },
-                  "slidesPerView": 1,
-                  "spaceBetween": 30,
-                  "breakpoints": {
-                    "768": {
-                      "slidesPerView": 2
-                    },
-                    "1200": {
-                      "slidesPerView": 3
-                    }
-                  },
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  }
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": { "delay": 4000 },
+                "slidesPerView": 1,
+                "spaceBetween": 30,
+                "breakpoints": {
+                  "768": { "slidesPerView": 2 },
+                  "1200": { "slidesPerView": 3 }
+                },
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
                 }
+              }
               </script>
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img
-                    src="assets/img/portfolio/portfolio-12.webp"
-                    alt="Project detail"
-                    class="img-fluid glightbox"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="assets/img/portfolio/portfolio-2.webp"
-                    alt="Project detail"
-                    class="img-fluid glightbox"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="assets/img/portfolio/portfolio-6.webp"
-                    alt="Project detail"
-                    class="img-fluid glightbox"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="assets/img/portfolio/portfolio-10.webp"
-                    alt="Project detail"
-                    class="img-fluid glightbox"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
+          
+              <div class="swiper-wrapper"></div>
+          
               <div class="swiper-pagination"></div>
             </div>
           </div>
@@ -706,6 +666,37 @@
 
             metricsGrid.appendChild(div);
           });
+
+          // Additional slider gallery
+          const sliderWrapper = document.querySelector(".additional-gallery .swiper-wrapper");
+
+          if (product.sliderimages && sliderWrapper) {
+            sliderWrapper.innerHTML = "";
+
+            product.sliderimages.forEach((img) => {
+              const slide = document.createElement("div");
+              slide.className = "swiper-slide";
+
+              slide.innerHTML = `
+                <img
+                  src="${img}"
+                  alt="Project detail"
+                  class="img-fluid glightbox"
+                  loading="lazy"
+                />
+              `;
+
+              sliderWrapper.appendChild(slide);
+            });
+
+            // Reinitialize swiper
+            const swiperContainer = document.querySelector(".gallery-slider");
+            const config = JSON.parse(
+              swiperContainer.querySelector(".swiper-config").textContent
+            );
+
+            new Swiper(swiperContainer, config);
+          }
         });
     </script>
   </body>
