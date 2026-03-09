@@ -24,11 +24,12 @@
       }
     ],
     "specs": {
-      "Platform": "Web (SPA)",
-      "Framework": "Angular 20",
-      "Styling": "Tailwind CSS v3",
-      "Language": "TypeScript 5.8",
-      "State Management": "Angular Signals"
+      "Client": "Localway Malta",
+      "Timeline": "6 Months",
+      "Role": "Lead Frontend Developer",
+      "Team": "4 Members",
+      "Deliverables": "Web Application, Admin Dashboard",
+      "Tech Stack": "Angular 20, TypeScript, Tailwind"
     },
     "process": [
       {
@@ -56,7 +57,13 @@
       "Frontend": ["Angular 20", "TypeScript", "Tailwind CSS", "RxJS", "ngx-translate", "Font Awesome"],
       "Charts & UI": ["ApexCharts", "ng-apexcharts", "ng2-nouislider"],
       "Tooling": ["Angular CLI", "PostCSS", "Karma / Jasmine", "Drone CI"]
-    }
+    },
+    "metrics": [
+      { "label": "User Satisfaction", "value": "92%" },
+      { "label": "Monthly Users", "value": "18k+" },
+      { "label": "App Store Rating", "value": "4.9" },
+      { "label": "Conversion Increase", "value": "65%" }
+    ]
   }
   
   ]
