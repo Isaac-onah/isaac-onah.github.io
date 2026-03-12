@@ -1,7 +1,7 @@
 [
   {
     "id": "transport-plus-driver",
-    "title": "Transport Plus – Professional Driver & Fleet Management",
+    "title": "Transport Plus",
     "category": "Mobile App Development",
     "year": "2024",
     "heroImage": "assets/img/portfolio/transport-colour.png",
@@ -17,15 +17,13 @@
       "assets/img/portfolio/localway-3.png",
       "assets/img/portfolio/localway-3.png"
     ],
-    "summary": "Transport Plus is a high-performance Flutter-based SAAS application built for the logistics and transportation sector. It facilitates a full-lifecycle trip management experience, including real-time job allocation, passenger manifests, integrated flight tracking, and automated financial reconciliation. The platform's multi-tenant architecture allows it to dynamically adapt to different service providers' backends and branding.",
-    "tags": ["Flutter", "Dart", "GetX", "BLoC", "Firebase", "REST API", "GPS Tracking"],
+    "summary": "Professional Driver & Fleet Management Application. Transport Plus is a high-performance Flutter SAAS for logistics, offering full-lifecycle trip management including real-time job allocation, flight tracking, and automated financial reconciliation. Its multi-tenant architecture allows for dynamic white-labeling and seamless adaptation to diverse service provider backends.",    "tags": ["Flutter", "Dart", "GetX", "BLoC", "Firebase", "REST API", "GPS Tracking"],
     "content": [
       {
         "heading": "Project Overview",
         "paragraphs": [
-          "Transport Plus Driver is a mission-critical mobile solution designed for professional drivers and fleet operators. Leveraging Flutter's cross-platform capabilities, the app provides a seamless experience for managing complex transportation tasks, including airport transfers, group bookings, and point-to-point deliveries.",
-          "The application features a sophisticated API integration layer that bridges the mobile interface with specialized backend instances. It handles intricate domain models such as real-time Flight data, Passenger (Pax) metrics, and multi-stop Routes, ensuring drivers have accurate, up-to-the-minute information for every job.",
-          "A key technical achievement is the app's resilient state management, which utilizes GetX for efficient dependency injection and navigation, alongside BLoC for handling multi-step processes like trip synchronization and cash reconciliation. Security and persistence are managed via GetStorage and Firebase, providing a secure, white-labeled experience for diverse transport providers."
+        "Transport Plus is a mission-critical Flutter SAAS solution designed to streamline complex logistics for professional drivers and fleet operators. By integrating real-time API layers for flight data, passenger metrics, and multi-stop routing, the app provides drivers with precise, up-to-the-minute job details. This ensures a seamless operational flow for everything from airport transfers to large-scale group bookings across both iOS and Android.",
+        "Technically, the platform maintains high-performance stability using a hybrid GetX and BLoC architecture to manage complex trip synchronization and financial reconciliation. Supported by Firebase for secure data persistence and white-labeling, the app reduces administrative overhead while providing a resilient, scalable interface for diverse transport providers."
         ]
       }
     ],
@@ -59,10 +57,11 @@
         "description": "Shipped a comprehensive suite of features including an automated 'Recon' module for financial settlements, a shift-based roster system, and a robust push notification layer using Firebase."
       }
     ],
+    "toolsDescription": "To ensure 99.9% uptime for trips, we utilized Flutter for cross-platform consistency. The stack focuses on resilient state management with BLoC and GetX, combined with real-time Firebase services for live fleet tracking and instant trip management.",
     "tools": {
-      "Frontend": ["Flutter", "Dart", "Google Fonts (Outfit)", "Font Awesome", "Lottie"],
-      "Services": ["Firebase Cloud Messaging", "Get Storage", "REST API Integration"],
-      "Tooling": ["GetX", "BLoC", "Sqflite", "Connectivity Plus", "Background Geolocation"]
+      "Frontend": ["Flutter", "Dart", "Google Maps"],
+      "Services": ["Firebase Cloud Messaging", "REST API Integration"],
+      "Tooling": ["GetX", "BLoC", "Sqflite", "Background Geolocation"]
     },
     "metrics": [
       { "label": "Driver Efficiency", "value": "95%" },
@@ -131,6 +130,7 @@
         "description": "Shipped a full booking flow (cart → pass-type selection → checkout), wishlist, authentication modal, role-based route guard, media upload, and a shared component library including modals, breadcrumbs, labels, and a time-picker."
       }
     ],
+    "toolsDescription": "For Localway, I prioritized a reactive architecture using Angular's latest features to ensure high performance and a seamless user experience across the Mediterranean's leading experience platform.",
     "tools": {
       "Frontend": ["Angular 20", "TypeScript", "Tailwind CSS", "RxJS", "ngx-translate", "Font Awesome"],
       "Charts & UI": ["ApexCharts", "ng-apexcharts", "ng2-nouislider"],

@@ -628,6 +628,16 @@
           });
 
           // Tools Section
+          const toolsSection = document.querySelector(".tools-section");
+            if (toolsSection) {
+              const descriptionTitle = toolsSection.querySelector("h2");
+              const descriptionPara = toolsSection.querySelector("p");
+              
+              // Update the title and paragraph from JSON
+              // We use a fallback string just in case toolsDescription is missing in JSON
+              descriptionTitle.textContent = "Tools & Technologies"; 
+              descriptionPara.textContent = product.toolsDescription || "A comprehensive overview of the technical stack used to bring this project to life.";
+            }
           const toolsGrid = document.querySelector(".tools-grid");
           toolsGrid.innerHTML = "";
 

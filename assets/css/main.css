@@ -3055,7 +3055,7 @@ section,
 .portfolio-details .process-timeline .timeline-steps .timeline-item {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .portfolio-details .process-timeline .timeline-steps .timeline-item:last-child {
