@@ -677,7 +677,6 @@
             product.sliderimages.forEach((img) => {
               const slide = document.createElement("div");
               slide.className = "swiper-slide";
-
               slide.innerHTML = `
                 <img
                   src="${img}"
@@ -686,17 +685,25 @@
                   loading="lazy"
                 />
               `;
-
               sliderWrapper.appendChild(slide);
             });
 
-            // Reinitialize swiper
+            // --- THE FIX IS HERE ---
+            // 1. Get the config from the script tag
             const swiperContainer = document.querySelector(".gallery-slider");
-            const config = JSON.parse(
-              swiperContainer.querySelector(".swiper-config").textContent
-            );
+            const configElement = swiperContainer.querySelector(".swiper-config");
+            const config = JSON.parse(configElement.textContent);
 
-            new Swiper(swiperContainer, config);
+            // 2. Initialize Swiper only after the slides are appended
+            const swiper = new Swiper(swiperContainer, config);
+
+            // 3. Optional: If images take a moment to load, call update
+            swiper.update();
+
+            // 4. Re-init GLightbox so the new slider images are clickable
+            if (typeof GLightbox !== 'undefined') {
+              GLightbox({ selector: '.glightbox' });
+            }
           }
         });
     </script>
