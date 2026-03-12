@@ -4,18 +4,17 @@
     "title": "Transport Plus",
     "category": "Mobile App Development",
     "year": "2024",
-    "heroImage": "assets/img/portfolio/transport-colour.png",
+    "heroImage": "assets/img/portfolio/transportplus/transport-colour.png",
     "gallery": [
-      "assets/img/portfolio/localway-1.png",
-      "assets/img/portfolio/localway-2.png",
-      "assets/img/portfolio/localway-3.png"
+      "assets/img/portfolio/transportplus/left.png",
+      "assets/img/portfolio/transportplus/top.png",
+      "assets/img/portfolio/transportplus/bottom.png"
     ],
     "sliderimages": [
-      "assets/img/portfolio/localway-1.png",
-      "assets/img/portfolio/localway-2.png",
-      "assets/img/portfolio/localway-3.png",
-      "assets/img/portfolio/localway-3.png",
-      "assets/img/portfolio/localway-3.png"
+      "assets/img/portfolio/transportplus/left.png",
+      "assets/img/portfolio/transportplus/top.png",
+      "assets/img/portfolio/transportplus/bottom.png",
+      "assets/img/portfolio/transportplus/transport-colour.png"
     ],
     "summary": "Professional Driver & Fleet Management Application. Transport Plus is a high-performance Flutter SAAS for logistics, offering full-lifecycle trip management including real-time job allocation, flight tracking, and automated financial reconciliation. Its multi-tenant architecture allows for dynamic white-labeling and seamless adaptation to diverse service provider backends.",    "tags": ["Flutter", "Dart", "GetX", "BLoC", "Firebase", "REST API", "GPS Tracking"],
     "content": [
@@ -31,9 +30,9 @@
       "Client": "Various (SAAS Platform)",
       "Timeline": "Continuous Development",
       "Role": "Lead Mobile Developer",
-      "Team": "Agile Team",
+      "Team": "3 Members",
       "Deliverables": "iOS & Android Driver Applications",
-      "Tech Stack": "Flutter, Dart, Firebase, GetX"
+      "Tech Stack": "Flutter, Dart, Firebase, BLoC"
     },
     "process": [
       {
@@ -75,18 +74,17 @@
     "title": "Localway – Local Experiences & Events Platform",
     "category": "Web Development",
     "year": "2025",
-    "heroImage": "assets/img/portfolio/localway-hero.webp",
+    "heroImage": "assets/img/portfolio/localway/localway.png",
     "gallery": [
-      "assets/img/portfolio/localway-1.png",
-      "assets/img/portfolio/localway-2.png",
-      "assets/img/portfolio/localway-3.png"
+      "assets/img/portfolio/localway/admin.webp",
+      "assets/img/portfolio/localway/top.png",
+      "assets/img/portfolio/localway/bottom.png"
     ],
     "sliderimages": [
-      "assets/img/portfolio/localway-1.png",
-      "assets/img/portfolio/localway-2.png",
-      "assets/img/portfolio/localway-3.png",
-      "assets/img/portfolio/localway-3.png",
-      "assets/img/portfolio/localway-3.png"
+      "assets/img/portfolio/localway/slider-1.png",
+      "assets/img/portfolio/localway/slider-2.png",
+      "assets/img/portfolio/localway/slider-3.png",
+      "assets/img/portfolio/localway/slider-4.png"
     ],
     "summary": "Localway is a full-featured Angular web application that connects users with local experiences and events in Malta and Gozo. The platform offers real-time filtering, multi-language support, category browsing, wishlist management, a booking flow with cart and pass-types, and an interactive map-based location layer.",
     "tags": ["Angular", "TypeScript", "Tailwind CSS", "RxJS", "REST API"],
