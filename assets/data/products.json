@@ -85,6 +85,8 @@
     "sliderimages": [
       "assets/img/portfolio/localway-1.png",
       "assets/img/portfolio/localway-2.png",
+      "assets/img/portfolio/localway-3.png",
+      "assets/img/portfolio/localway-3.png",
       "assets/img/portfolio/localway-3.png"
     ],
     "summary": "Transport Plus is a high-performance Flutter-based SAAS application built for the logistics and transportation sector. It facilitates a full-lifecycle trip management experience, including real-time job allocation, passenger manifests, integrated flight tracking, and automated financial reconciliation. The platform's multi-tenant architecture allows it to dynamically adapt to different service providers' backends and branding.",
