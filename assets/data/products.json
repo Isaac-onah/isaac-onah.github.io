@@ -140,6 +140,110 @@
       { "label": "App Store Rating", "value": "4.5" },
       { "label": "Conversion Increase", "value": "65%" }
     ]
+  },
+  {
+    "id": "freehour-web",
+    "title": "Freehour",
+    "category": "Web Application Development",
+    "year": "2024",
+    "heroImage": "assets/img/portfolio/freehour/hero.png",
+    "gallery": [
+      "assets/img/portfolio/freehour/1.png",
+      "assets/img/portfolio/freehour/2.png",
+      "assets/img/portfolio/freehour/3.png"
+    ],
+    "sliderimages": [
+      "assets/img/portfolio/freehour/1.png",
+      "assets/img/portfolio/freehour/2.png",
+      "assets/img/portfolio/freehour/3.png",
+      "assets/img/portfolio/freehour/hero.png"
+    ],
+    "summary": "The ultimate student productivity platform. Freehour is a comprehensive web application offering timetable management, attendance tracking, and social scheduling. Its unique 'Who's Free' feature allows students to cross-reference schedules and find common free slots with friends in real-time.",
+    "tags": [
+      "Angular",
+      "TypeScript",
+      "Firebase",
+      "RxJS",
+      "Student App",
+      "Productivity"
+    ],
+    "content": [
+      {
+        "heading": "Project Overview",
+        "paragraphs": [
+          "Freehour is a feature-rich student productivity and social platform designed to simplify academic life. Built entirely in Angular, it gives students a centralized dashboard to manage their university or college timetables, track lectures and attendance, and monitor essential deadlines like assignments and exams through custom countdowns.",
+          "A core differentiator of the platform is its social integration, specifically the 'Who's Free' feature. By leveraging a complex scheduling algorithm, the app allows users to seamlessly compare their timetables with peers, automatically highlighting mutual free gaps. This transforms a strictly utility-driven app into a collaborative campus tool, backed by resilient architecture and Firebase real-time data synchronization."
+        ]
+      }
+    ],
+    "specs": {
+      "Client": "Freehour",
+      "Timeline": "Continuous Development",
+      "Role": "Lead Web Developer",
+      "Team": "Various",
+      "Deliverables": "Web Application (Angular)",
+      "Tech Stack": "Angular, TypeScript, Firebase, RxJS, HTML5/CSS3"
+    },
+    "process": [
+      {
+        "step": 1,
+        "title": "Architecture & State Management",
+        "description": "Established a robust component-based architecture using Angular and RxJS to efficiently manage local state, complex calendar rendering, and asynchronous data streams."
+      },
+      {
+        "step": 2,
+        "title": "Timetable & Calendar Engineering",
+        "description": "Developed dynamic timetable interfaces that parse complex recurring rules, calculate lecture gaps, and seamlessly integrate cross-referenced scheduling logic."
+      },
+      {
+        "step": 3,
+        "title": "Social Scheduling Algorithm",
+        "description": "Implemented the 'Who's Free' algorithm, comparing user lecture endpoints and friends' schedules to precisely identify and display mutual free slots during the day."
+      },
+      {
+        "step": 4,
+        "title": "Real-time Tracking & Features",
+        "description": "Integrated complete student toolsets including attendance tracking, modular countdowns for assignments, and profile configurations, persisting data securely with Firebase."
+      }
+    ],
+    "toolsDescription": "To guarantee smooth performance across a wide range of devices, we utilized Angular's reactive paradigms. The web app integrates heavily with RxJS for handling real-time friend states and complex timetable stream logic, paired with Firebase for reliable cloud synchronization.",
+    "tools": {
+      "Frontend": [
+        "Angular 20",
+        "TypeScript",
+        "HTML5",
+        "CSS3"
+      ],
+      "Services": [
+        "Firebase",
+        "Authentication",
+        "Google Calendar Sync"
+      ],
+      "Tooling": [
+        "RxJS",
+        "Karma",
+        "Jasmine",
+        "Angular CLI"
+      ]
+    },
+    "metrics": [
+      {
+        "label": "Social Engagement",
+        "value": "High"
+      },
+      {
+        "label": "Core Features",
+        "value": "10+"
+      },
+      {
+        "label": "Performance Rating",
+        "value": "Seamless"
+      },
+      {
+        "label": "Platform",
+        "value": "Web App"
+      }
+    ]
   }
 
   
