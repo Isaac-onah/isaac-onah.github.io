@@ -1778,6 +1778,12 @@ section,
   border-radius: 12px 12px 0 0;
 }
 
+.skills-card {
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 80%);
+  border-radius: var(--border-radius, 8px);
+  background: var(--surface-color);
+}
+
 .resume .education-skills .education-grid .education-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 40px color-mix(in srgb, var(--default-color), transparent 90%);
@@ -3708,5 +3714,26 @@ section,
     position: static;
     margin-top: 3rem;
   }
+}
+
+/*--------------------------------------------------------------
+# Custom Scrollbar
+--------------------------------------------------------------*/
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--default-color), transparent 70%);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
 }
 
