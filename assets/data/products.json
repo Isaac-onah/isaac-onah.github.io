@@ -244,7 +244,76 @@
         "value": "Web App"
       }
     ]
+  },
+  {
+    "id": "smart-inventory-pos",
+    "title": "Smart Inventory & POS System",
+    "category": "Mobile App Development",
+    "year": "2024",
+    "heroImage": "assets/img/portfolio/portfolio-10.webp",
+    "gallery": [
+      "assets/img/portfolio/portfolio-8.webp",
+      "assets/img/portfolio/portfolio-9.webp",
+      "assets/img/portfolio/portfolio-11.webp"
+    ],
+    "sliderimages": [
+      "assets/img/portfolio/portfolio-8.webp",
+      "assets/img/portfolio/portfolio-9.webp",
+      "assets/img/portfolio/portfolio-10.webp",
+      "assets/img/portfolio/portfolio-11.webp"
+    ],
+    "summary": "Full-featured Inventory Management and Point-of-Sale (POS) application built with Flutter. It streamlines product management, sales processing via QR code scanning, dynamic PDF receipt generation, and Bluetooth thermal printing. The app features robust analytics using Syncfusion Charts and ensures secure offline-first functionality utilizing SQLite, backed by Firebase for seamless cloud synchronization.",
+    "tags": ["Flutter", "Dart", "Firebase", "Provider", "SQLite", "GetX", "POS", "Bluetooth Printing"],
+    "content": [
+      {
+        "heading": "Project Overview",
+        "paragraphs": [
+          "The Smart Inventory & POS System is an all-in-one mobile app designed to optimize retail and warehouse operations. It empowers users with real-time store monitoring and frictionless daily sales by providing an intuitive user interface for managing a product catalog, adjusting quantities, and ringing up customers directly from a mobile device.",
+          "Technically, the platform operates on a robust offline-first architecture using SQLite, ensuring zero downtime during sales. It incorporates state management utilizing Provider to handle complex cart logic and data synchronization. The complete sales lifecycle is covered, including rapid item lookups via QR code scanning, instant Bluetooth thermal invoice (facture) printing, and comprehensive business reporting populated by visually rich Syncfusion charts."
+        ]
+      }
+    ],
+    "specs": {
+      "Client": "Independent Retailers / SMEs",
+      "Timeline": "Continuous Development",
+      "Role": "Lead Mobile Developer",
+      "Team": "Solo Developer",
+      "Deliverables": "Android and iOS Application",
+      "Tech Stack": "Flutter, Dart, Firebase, SQLite, Provider"
+    },
+    "process": [
+      {
+        "step": 1,
+        "title": "Architecture & State Management",
+        "description": "Established an offline-first foundation with SQLite for secure local persistence and rapid inventory adjustments, coupled with Provider for scalable state management across screens."
+      },
+      {
+        "step": 2,
+        "title": "POS & Sales Integration",
+        "description": "Implemented a high-fidelity point-of-sale workflow, introducing rapid QR code scanning for product lookup and dynamic cart processing within the centralized Cash and Sales screens."
+      },
+      {
+        "step": 3,
+        "title": "Hardware Interactions",
+        "description": "Engineered custom utility bridges to enable immediate remote Bluetooth thermal receipt printing, as well as robust dynamic PDF generation for invoices using the local file system."
+      },
+      {
+        "step": 4,
+        "title": "Analytics & Cloud Sync",
+        "description": "Integrated rich analytical dashboards incorporating Syncfusion charts for advanced sales and inventory reporting. Configured Firebase to handle secure cloud storage, optional remote database backups, and push notifications."
+      }
+    ],
+    "toolsDescription": "To guarantee lightning-fast operations at the checkout counter, the application relies on an efficient local SQLite database. Flutter provided the ideal cross-platform framework to smoothly integrate hardware functionalities, such as the device camera for fast barcode scanning and Bluetooth peripherals for instant physical receipt printing.",
+    "tools": {
+      "Frontend": ["Flutter", "Dart", "Syncfusion Charts", "Lottie"],
+      "Services": ["Firebase Auth", "Firestore", "Firebase Messaging"],
+      "Tooling": ["Provider", "GetX", "SQLite", "QR Scanner", "ESC/POS Utils"]
+    },
+    "metrics": [
+      { "label": "Offline Capability", "value": "100%" },
+      { "label": "Checkout Speed", "value": "Sub-second" },
+      { "label": "Hardware Support", "value": "Printers, Scanners" },
+      { "label": "Core Features", "value": "10+" }
+    ]
   }
-
-  
-  ]
+]
