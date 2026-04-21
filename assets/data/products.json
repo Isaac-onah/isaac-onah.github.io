@@ -315,5 +315,147 @@
       { "label": "Hardware Support", "value": "Printers, Scanners" },
       { "label": "Core Features", "value": "10+" }
     ]
+  },
+  {
+    "id": "omniprop-enterprise",
+    "title": "OmniProp – High-Concurrency Property Ecosystem",
+    "category": "Mobile & Web Engineering",
+    "year": "2026",
+    "heroImage": "assets/img/portfolio/omniprop/hero.png",
+    "gallery": [
+      "assets/img/portfolio/portfolio-8.webp",
+      "assets/img/portfolio/portfolio-9.webp",
+      "assets/img/portfolio/portfolio-11.webp"
+    ],
+    "sliderimages": [
+      "assets/img/portfolio/portfolio-8.webp",
+      "assets/img/portfolio/portfolio-9.webp",
+      "assets/img/portfolio/portfolio-10.webp",
+      "assets/img/portfolio/portfolio-11.webp"
+    ],
+    "summary": "A robust, multi-tenant property management ecosystem designed for high-concurrency environments. It features an offline-first Flutter mobile application for field agents and a sophisticated Angular 19+ admin dashboard, focused on complex data synchronization and financial auditing.",
+    "tags": ["Flutter", "Angular", "Drift/SQLite", "NgRx", "Signals", "Conflict Resolution"],
+    "content": [
+      {
+        "heading": "Project Overview",
+        "paragraphs": [
+          "OmniProp addresses the critical challenge of maintaining data integrity across distributed field teams and centralized administrative offices. The mobile component is engineered for 100% offline functionality in low-connectivity areas, using a sophisticated local-first architecture. This ensures that property inspections, maintenance logs, and tenant interactions are never interrupted.",
+          "On the web, the platform leverages Angular’s reactive Signals and NgRx for enterprise-scale state management. It provides real-time financial oversight, heat-mapped maintenance analytics, and automated lease lifecycle management. The core innovation lies in its Conflict-Free Replicated Data (CRDT) inspired sync engine, which gracefully handles simultaneous edits from multiple stakeholders."
+        ]
+      }
+    ],
+    "specs": {
+      "Client": "Enterprise Real Estate Firms",
+      "Timeline": "12 Weeks (Initial MVP)",
+      "Role": "Senior Systems Architect",
+      "Team": "2 Members",
+      "Deliverables": "iOS/Android Agent App, Web Admin Portal",
+      "Tech Stack": "Flutter, Angular, Drift, Supabase"
+    },
+    "process": [
+      {
+        "step": 1,
+        "title": "Local-First Architecture",
+        "description": "Implemented Drift (SQLite) with a reactive repository pattern in Flutter to ensure zero-latency UI updates while managing a complex background sync queue for offline data."
+      },
+      {
+        "step": 2,
+        "title": "Sync Engine & Conflict Resolution",
+        "description": "Designed a custom reconciliation logic using version stamping and 'Last Write Wins' strategies to resolve data collisions between mobile field updates and web-based administrative changes."
+      },
+      {
+        "step": 3,
+        "title": "Reactive Admin Dashboard",
+        "description": "Utilized Angular Signals and NgRx to build a high-performance web interface capable of streaming real-time IoT sensor data and financial metrics without UI jank."
+      },
+      {
+        "step": 4,
+        "title": "Multi-Tenant Security",
+        "description": "Engineered a strict Row-Level Security (RLS) layer in the backend, coupled with Angular route guards, to ensure complete data isolation between different property firms."
+      }
+    ],
+    "toolsDescription": "Engineered for maximum reliability, utilizing Flutter for native-performance mobile experiences and Angular for scalable web management. The stack prioritizes data consistency through Drift and reactive state management.",
+    "tools": {
+      "Mobile": ["Flutter", "Drift (SQLite)", "Method Channels"],
+      "Web": ["Angular 19", "NgRx", "Signals", "Tailwind"],
+      "Infrastructure": ["Supabase", "Edge Functions", "Docker"]
+    },
+    "metrics": [
+      { "label": "Offline Reliability", "value": "100%" },
+      { "label": "Sync Latency", "value": "Sub-2s" },
+      { "label": "Data Integrity", "value": "99.99%" },
+      { "label": "Scale", "value": "Multi-Tenant" }
+    ]
+  },
+  {
+    "id": "sentinel-iot",
+    "title": "Sentinel – IoT Security & Hardware Orchestrator",
+    "category": "Hardware-Software Integration",
+    "year": "2026",
+    "heroImage": "assets/img/portfolio/sentinel/hero.png",
+    "gallery": [
+      "assets/img/portfolio/portfolio-8.webp",
+      "assets/img/portfolio/portfolio-9.webp",
+      "assets/img/portfolio/portfolio-11.webp"
+    ],
+    "sliderimages": [
+      "assets/img/portfolio/portfolio-8.webp",
+      "assets/img/portfolio/portfolio-9.webp",
+      "assets/img/portfolio/portfolio-10.webp",
+      "assets/img/portfolio/portfolio-11.webp"
+    ],
+    "summary": "A high-security orchestration platform that bridges physical hardware with digital controls. Sentinel utilizes Native Mobile SDKs (Swift/Kotlin) for BLE and NFC communication, paired with a real-time Angular Command Center for campus-wide security monitoring and device provisioning.",
+    "tags": ["Swift", "Kotlin", "NFC/BLE", "Angular", "WebSockets", "Biometric Auth"],
+    "content": [
+      {
+        "heading": "Project Overview",
+        "paragraphs": [
+          "Sentinel is a deep-tech project demonstrating the integration of mobile devices with physical security hardware. The mobile application bypasses high-level wrappers in favor of custom Native Method Channels, allowing direct communication with Smart Locks via Bluetooth Low Energy (BLE) and NFC protocols.",
+          "The system is governed by a Zero-Trust security model, requiring multi-factor biometric authentication for hardware interaction. The web dashboard acts as a central nervous system, providing live-streaming security logs via WebSockets and a robust provisioning interface for deploying new hardware nodes across a network. This project highlights the transition from standard app development to systems engineering."
+        ]
+      }
+    ],
+    "specs": {
+      "Client": "Commercial Security Providers",
+      "Timeline": "12 Weeks",
+      "Role": "Lead Systems Engineer",
+      "Team": "Solo / Independent",
+      "Deliverables": "Security Mobile Client, Web Command Center",
+      "Tech Stack": "Native Swift/Kotlin, Flutter, Angular, Node.js"
+    },
+    "process": [
+      {
+        "step": 1,
+        "title": "Native Hardware Bridging",
+        "description": "Developed custom Swift and Kotlin modules to interface directly with the device's NFC and BLE hardware, exposing these capabilities to the Flutter UI via Method Channels."
+      },
+      {
+        "step": 2,
+        "title": "Biometric & Cryptographic Security",
+        "description": "Integrated LocalAuthentication (iOS) and BiometricPrompt (Android) to secure hardware commands, combined with AES-256 encryption for all data in transit."
+      },
+      {
+        "step": 3,
+        "title": "Real-time Event Orchestration",
+        "description": "Built a WebSocket-driven Angular frontend that monitors hardware state changes globally, providing immediate visual feedback and audit trails for every security event."
+      },
+      {
+        "step": 4,
+        "title": "DevOps & Hardware Simulation",
+        "description": "Established a CI/CD pipeline for automated native testing and created a virtualized 'Hardware Mock' server to test system responses to varying sensor inputs."
+      }
+    ],
+    "toolsDescription": "The focus was on hardware-level control and security. By utilizing Native SDKs for communication and Angular for the monitoring hub, we ensured a low-latency, high-security bridge between the user and the physical world.",
+    "tools": {
+      "Native": ["Swift", "Kotlin", "CoreBluetooth", "NFCManager"],
+      "Frontend": ["Flutter", "Angular", "RxJS"],
+      "Real-time": ["WebSockets", "MQTT", "Node.js"]
+    },
+    "metrics": [
+      { "label": "Hardware Latency", "value": "<150ms" },
+      { "label": "Security Model", "value": "Zero-Trust" },
+      { "label": "Native Coverage", "value": "Deep" },
+      { "label": "Uptime", "value": "99.9%" }
+    ]
   }
 ]
