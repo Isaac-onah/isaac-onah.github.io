@@ -2,8 +2,9 @@
   {
     "id": "transport-plus-driver",
     "title": "Transport Plus",
-    "category": "Mobile App Development",
+    "category": "Flutter · Mobile",
     "year": "2024",
+    "url": "https://play.google.com/store/apps/details?id=io.transportplus.driver",
     "heroImage": "assets/img/portfolio/transportplus/transport-colour.png",
     "gallery": [
       "assets/img/portfolio/transportplus/left.png",
@@ -16,64 +17,138 @@
       "assets/img/portfolio/transportplus/bottom.png",
       "assets/img/portfolio/transportplus/transport-colour.png"
     ],
-    "summary": "Professional Driver & Fleet Management Application. Transport Plus is a high-performance Flutter SAAS for logistics, offering full-lifecycle trip management including real-time job allocation, flight tracking, and automated financial reconciliation. Its multi-tenant architecture allows for dynamic white-labeling and seamless adaptation to diverse service provider backends.",    "tags": ["Flutter", "Dart", "GetX", "BLoC", "Firebase", "REST API", "GPS Tracking"],
+    "summary": "Multi-tenant fleet platform for coaches in Malta, airport, and shuttle drivers. Production Driver client with trip lifecycle, background GPS, Firebase push, roster, and cash reconciliation.",
+    "tags": ["Flutter", "BLoC", "Clean Architecture", "GetIt", "REST", "SQLite", "Firebase"],
     "content": [
       {
         "heading": "Project Overview",
         "paragraphs": [
-        "Transport Plus is a mission-critical Flutter SAAS solution designed to streamline complex logistics for professional drivers and fleet operators. By integrating real-time API layers for flight data, passenger metrics, and multi-stop routing, the app provides drivers with precise, up-to-the-minute job details. This ensures a seamless operational flow for everything from airport transfers to large-scale group bookings across both iOS and Android.",
-        "Technically, the platform maintains high-performance stability using a hybrid GetX and BLoC architecture to manage complex trip synchronization and financial reconciliation. Supported by Firebase for secure data persistence and white-labeling, the app reduces administrative overhead while providing a resilient, scalable interface for diverse transport providers."
+          "Transport Plus is a multi-tenant fleet platform used by coach, airport-transfer, and shuttle operators in Malta. I built the production Driver client in Flutter: trip lifecycle, background GPS, Firebase push, roster and vehicle assignment, and cash reconciliation.",
+          "The app is structured with BLoC and Clean Architecture so trip state, location, and settlement flows stay testable and independent of the UI. REST APIs, SQLite, and secure storage support offline-tolerant driver work; Firebase handles push and operational messaging."
         ]
       }
     ],
     "specs": {
-      "Client": "Various (SAAS Platform)",
-      "Timeline": "Continuous Development",
-      "Role": "Lead Mobile Developer",
-      "Team": "3 Members",
-      "Deliverables": "iOS & Android Driver Applications",
-      "Tech Stack": "Flutter, Dart, Firebase, BLoC"
+      "Client": "Jett Labs / Transport Plus",
+      "Platform": "iOS & Android",
+      "Role": "Mobile/Frontend Engineer",
+      "Deliverables": "Driver application",
+      "Tech Stack": "Flutter, BLoC, Clean Architecture, GetIt, REST, SQLite, Firebase",
+      "Live": "https://play.google.com/store/apps/details?id=io.transportplus.driver"
     },
     "process": [
       {
         "step": 1,
-        "title": "Architecture & State Management",
-        "description": "Established a scalable foundation using a hybrid architecture with GetX and BLoC to separate UI logic from complex business rules such as reconciliation and trip workflows."
+        "title": "Architecture",
+        "description": "BLoC + Clean Architecture with GetIt, so trip, roster, and reconciliation rules sit behind the UI."
       },
       {
         "step": 2,
-        "title": "Dynamic Tenant Configuration",
-        "description": "Engineered a flexible startup flow that allows the app to dynamically resolve API endpoints and company-specific resources (COMPANYURL) directly from secure local storage."
+        "title": "Trip lifecycle",
+        "description": "Driver flows for taxi, airport-transfer, and shuttle jobs: assignment, in-progress state, and completion."
       },
       {
         "step": 3,
-        "title": "Tracking & Service Integration",
-        "description": "Integrated background geolocation for persistent fleet monitoring and implemented specialized flight tracking models to handle real-time arrival and departure updates for airport jobs."
+        "title": "Location and messaging",
+        "description": "Background GPS for fleet tracking and Firebase push for trip and roster updates."
       },
       {
         "step": 4,
-        "title": "Feature Delivery",
-        "description": "Shipped a comprehensive suite of features including an automated 'Recon' module for financial settlements, a shift-based roster system, and a robust push notification layer using Firebase."
+        "title": "Operations",
+        "description": "Roster and vehicle assignment, cash reconciliation, REST sync, SQLite, and secure storage."
       }
     ],
-    "toolsDescription": "To ensure 99.9% uptime for trips, we utilized Flutter for cross-platform consistency. The stack focuses on resilient state management with BLoC and GetX, combined with real-time Firebase services for live fleet tracking and instant trip management.",
+    "toolsDescription": "Flutter Driver client with BLoC, Clean Architecture, GetIt, REST, SQLite, secure storage, and Firebase.",
     "tools": {
-      "Frontend": ["Flutter", "Dart", "Google Maps"],
-      "Services": ["Firebase Cloud Messaging", "REST API Integration"],
-      "Tooling": ["GetX", "BLoC", "Sqflite", "Background Geolocation"]
+      "Mobile": ["Flutter", "Dart", "BLoC", "GetIt"],
+      "Data": ["REST", "SQLite", "Secure storage"],
+      "Services": ["Firebase", "Background GPS"]
     },
     "metrics": [
-      { "label": "Driver Efficiency", "value": "95%" },
-      { "label": "Active Fleet Size", "value": "10k+" },
-      { "label": "App Store Rating", "value": "4.5" },
-      { "label": "Admin Overhead Reduction", "value": "40%" }
+      { "label": "Platform", "value": "iOS & Android" },
+      { "label": "Architecture", "value": "BLoC + Clean" },
+      { "label": "Ops", "value": "Roster + recon" },
+      { "label": "Distribution", "value": "Play Store" }
+    ]
+  },
+  {
+    "id": "localway-mobile",
+    "title": "Localway Traveller",
+    "category": "Flutter · Mobile",
+    "year": "2025",
+    "url": "https://local-way.com/",
+    "heroImage": "assets/img/portfolio/localway.webp",
+    "gallery": [
+      "assets/img/portfolio/localway.webp",
+      "assets/img/portfolio/localway/top.png",
+      "assets/img/portfolio/localway/bottom.png"
+    ],
+    "sliderimages": [
+      "assets/img/portfolio/localway.webp",
+      "assets/img/portfolio/localway.png",
+      "assets/img/portfolio/localway/top.png",
+      "assets/img/portfolio/localway/bottom.png"
+    ],
+    "summary": "Flutter traveller app for Localway, a Sicily experiences marketplace. Bookings, maps, Stripe-backed checkout, host–guest chat, reviews, and EN/IT localisation — one part of a three-app suite.",
+    "tags": ["Flutter", "BLoC", "REST", "Socket.IO", "Google Maps", "Stripe"],
+    "content": [
+      {
+        "heading": "Project Overview",
+        "paragraphs": [
+          "Localway is an Italian tourism marketplace in Sicily where travellers book experiences from Local Advisors. I built the Flutter traveller app as part of a three-app suite alongside an Angular public storefront and an Angular host/admin portal.",
+          "The traveller client covers discovery, bookings, maps, host–guest chat, reviews, and English/Italian localisation, talking to the same REST and Socket.IO backend as the web products, with Stripe for checkout."
+        ]
+      }
+    ],
+    "specs": {
+      "Client": "Jett Labs / Localway",
+      "Platform": "iOS & Android",
+      "Role": "Mobile/Frontend Engineer",
+      "Deliverables": "Flutter traveller app",
+      "Tech Stack": "Flutter, BLoC, REST, Socket.IO, Google Maps, Stripe",
+      "Live": "https://local-way.com/"
+    },
+    "process": [
+      {
+        "step": 1,
+        "title": "Traveller product",
+        "description": "Flutter app for browsing and booking Sicily experiences, aligned with the Angular storefront."
+      },
+      {
+        "step": 2,
+        "title": "Maps and localisation",
+        "description": "Google Maps for experience location, with EN/IT copy resolved in the client."
+      },
+      {
+        "step": 3,
+        "title": "Realtime and payments",
+        "description": "Socket.IO for host–guest chat and Stripe-hosted checkout against the shared backend."
+      },
+      {
+        "step": 4,
+        "title": "Reviews and bookings",
+        "description": "Booking lifecycle and reviews so the traveller app matches the rest of the Localway suite."
+      }
+    ],
+    "toolsDescription": "Flutter traveller client using BLoC, REST, Socket.IO, Google Maps, and Stripe, shared with the Angular Localway apps.",
+    "tools": {
+      "Mobile": ["Flutter", "Dart", "BLoC"],
+      "Integrations": ["REST", "Socket.IO", "Google Maps", "Stripe"],
+      "Product": ["Bookings", "Chat", "EN/IT"]
+    },
+    "metrics": [
+      { "label": "Suite", "value": "3 apps" },
+      { "label": "Market", "value": "Sicily" },
+      { "label": "Languages", "value": "EN / IT" },
+      { "label": "Payments", "value": "Stripe" }
     ]
   },
   {
     "id": "localway-web",
-    "title": "Localway – Local Experiences & Events Platform",
-    "category": "Web Development",
+    "title": "Localway Storefront & Admin",
+    "category": "Angular · Web",
     "year": "2025",
+    "url": "https://local-way.com/",
     "heroImage": "assets/img/portfolio/localway/localway.png",
     "gallery": [
       "assets/img/portfolio/localway/admin.webp",
@@ -86,376 +161,186 @@
       "assets/img/portfolio/localway/slider-3.png",
       "assets/img/portfolio/localway/slider-4.png"
     ],
-    "summary": "Localway is a full-featured Angular web application that connects users with local experiences and events in Malta and Gozo. The platform offers real-time filtering, multi-language support, category browsing, wishlist management, a booking flow with cart and pass-types, and an interactive map-based location layer.",
-    "tags": ["Angular", "TypeScript", "Tailwind CSS", "RxJS", "REST API"],
+    "summary": "Angular public storefront and host/admin CMS for Localway in Sicily. Bookings calendar, Stripe Checkout/Connect, host–guest chat, reviews, and EN/IT localisation.",
+    "tags": ["Angular", "TypeScript", "REST", "Socket.IO", "Stripe", "RxJS"],
     "content": [
       {
         "heading": "Project Overview",
         "paragraphs": [
-          "Localway is a consumer-facing discovery platform built entirely with Angular 20 standalone components and Angular Signals for reactive state management. It lets users browse, search, filter, and book local experiences and events.",
-          "The app communicates with a RESTful backend (via HttpClient), supports paginated experience listings, geolocation-based results, and a rich detail view per experience, complete with itinerary, FAQs, pass-types, and media galleries.",
-          "Internationalisation is baked in at the data-model level: every piece of user-facing text (titles, descriptions, category names) is stored as a LocalizedString array and resolved at render-time through a dedicated LanguageService, with English and Italian as supported languages."
+          "Alongside the Flutter traveller app, I built Localway’s Angular public storefront and Angular host/admin portal. Hosts manage experiences, a bookings calendar, and content; travellers book on the web with the same EN/IT localisation as the mobile app.",
+          "The admin side is a CMS with role-based dashboards. Checkout uses Stripe Checkout and Connect payouts. Host–guest chat and reviews sit on REST plus Socket.IO, with Google Maps on experience location."
         ]
       }
     ],
     "specs": {
-      "Client": "Localway Malta",
-      "Timeline": "6 Months",
-      "Role": "Lead Frontend Developer",
-      "Team": "4 Members",
-      "Deliverables": "Web Application, Admin Dashboard",
-      "Tech Stack": "Angular 20, TypeScript, Tailwind"
+      "Client": "Jett Labs / Localway",
+      "Platform": "Web",
+      "Role": "Mobile/Frontend Engineer",
+      "Deliverables": "Public storefront, host/admin CMS",
+      "Tech Stack": "Angular, TypeScript, REST, Socket.IO, Stripe, Google Maps",
+      "Live": "https://local-way.com/"
     },
     "process": [
       {
         "step": 1,
-        "title": "Architecture & Routing",
-        "description": "Defined a clean route hierarchy covering home, category explore, experience detail, bookings, wishlist, cart, profile (auth-guarded), and a full set of static pages (About, Contact, Blog, Legal, etc.)."
+        "title": "Storefront",
+        "description": "Public Angular app for discovering and booking Sicily experiences, with EN/IT localisation."
       },
       {
         "step": 2,
-        "title": "Data Modelling",
-        "description": "Designed TypeScript interfaces for more Experience, EventResponse, Category, PassType, Occurrence, and geospatial types (GeoJSONPoint, Location) to strictly type all API responses."
+        "title": "Host and admin CMS",
+        "description": "Role-based portal for experiences, bookings calendar, content, and reviews."
       },
       {
         "step": 3,
-        "title": "Reactive Services",
-        "description": "Built signal-based services (ExperienceService,b CategoryService) that expose computed filtered lists, combined search results across experiences and locations, and date-range filtering, all derived automatically from a handful of source signals."
+        "title": "Payments",
+        "description": "Stripe-hosted checkout for travellers and Connect payouts for hosts."
       },
       {
         "step": 4,
-        "title": "Feature Delivery",
-        "description": "Shipped a full booking flow (cart → pass-type selection → checkout), wishlist, authentication modal, role-based route guard, media upload, and a shared component library including modals, breadcrumbs, labels, and a time-picker."
+        "title": "Realtime",
+        "description": "Socket.IO host–guest chat and REST APIs shared with the Flutter traveller app."
       }
     ],
-    "toolsDescription": "For Localway, I prioritized a reactive architecture using Angular's latest features to ensure high performance and a seamless user experience across the Mediterranean's leading experience platform.",
+    "toolsDescription": "Angular storefront and admin CMS with TypeScript, REST, Socket.IO, Stripe Checkout/Connect, and Google Maps.",
     "tools": {
-      "Frontend": ["Angular 20", "TypeScript", "Tailwind CSS", "RxJS", "ngx-translate", "Font Awesome"],
-      "Charts & UI": ["ApexCharts", "ng-apexcharts", "ng2-nouislider"],
-      "Tooling": ["Angular CLI", "PostCSS", "Karma / Jasmine", "Drone CI"]
+      "Frontend": ["Angular", "TypeScript", "RxJS"],
+      "Integrations": ["REST", "Socket.IO", "Stripe", "Google Maps"],
+      "Product": ["CMS", "Bookings calendar", "EN/IT"]
     },
     "metrics": [
-      { "label": "User Satisfaction", "value": "92%" },
-      { "label": "Monthly Users", "value": "18k+" },
-      { "label": "App Store Rating", "value": "4.5" },
-      { "label": "Conversion Increase", "value": "65%" }
+      { "label": "Apps in suite", "value": "Storefront + admin" },
+      { "label": "Market", "value": "Sicily" },
+      { "label": "Languages", "value": "EN / IT" },
+      { "label": "Payments", "value": "Stripe Connect" }
     ]
   },
   {
     "id": "freehour-web",
-    "title": "Freehour",
-    "category": "Web Application Development",
+    "title": "FreeHour",
+    "category": "Angular · Web",
     "year": "2024",
-    "heroImage": "assets/img/portfolio/freehour/hero.png",
+    "url": "https://web.freehourapp.com",
+    "heroImage": "assets/img/portfolio/freehour.webp",
     "gallery": [
-      "assets/img/portfolio/freehour/1.png",
-      "assets/img/portfolio/freehour/2.png",
-      "assets/img/portfolio/freehour/3.png"
+      "assets/img/portfolio/freehour.webp"
     ],
-    "sliderimages": [
-      "assets/img/portfolio/freehour/1.png",
-      "assets/img/portfolio/freehour/2.png",
-      "assets/img/portfolio/freehour/3.png",
-      "assets/img/portfolio/freehour/hero.png"
-    ],
-    "summary": "The ultimate student productivity platform. Freehour is a comprehensive web application offering timetable management, attendance tracking, and social scheduling. Its unique 'Who's Free' feature allows students to cross-reference schedules and find common free slots with friends in real-time.",
-    "tags": [
-      "Angular",
-      "TypeScript",
-      "Firebase",
-      "RxJS",
-      "Student App",
-      "Productivity"
-    ],
+    "sliderimages": [],
+    "summary": "Angular student web app for Malta institutions: swipeable timetables, Who’s Free matching, lecture/task/exam events and countdowns, Google Calendar sync, friend/discover flows, and student offers and jobs.",
+    "tags": ["Angular", "TypeScript", "RxJS", "REST", "Firebase"],
     "content": [
       {
         "heading": "Project Overview",
         "paragraphs": [
-          "Freehour is a feature-rich student productivity and social platform designed to simplify academic life. Built entirely in Angular, it gives students a centralized dashboard to manage their university or college timetables, track lectures and attendance, and monitor essential deadlines like assignments and exams through custom countdowns.",
-          "A core differentiator of the platform is its social integration, specifically the 'Who's Free' feature. By leveraging a complex scheduling algorithm, the app allows users to seamlessly compare their timetables with peers, automatically highlighting mutual free gaps. This transforms a strictly utility-driven app into a collaborative campus tool, backed by resilient architecture and Firebase real-time data synchronization."
+          "FreeHour is a student productivity and social platform for Malta institutions. I built the Angular frontend: swipeable timetables, Who’s Free matching against friends’ calendars, lecture/task/exam events and countdowns, Google Calendar sync, friend and discover flows, and student offers and jobs.",
+          "The client is Angular with TypeScript and RxJS, talking to REST APIs and Firebase so timetable and social state stay in sync across the campus product."
         ]
       }
     ],
     "specs": {
-      "Client": "Freehour",
-      "Timeline": "Continuous Development",
-      "Role": "Lead Web Developer",
-      "Team": "Various",
-      "Deliverables": "Web Application (Angular)",
-      "Tech Stack": "Angular, TypeScript, Firebase, RxJS, HTML5/CSS3"
+      "Client": "Jett Labs / FreeHour",
+      "Platform": "Web",
+      "Role": "Mobile/Frontend Engineer",
+      "Deliverables": "Angular web application",
+      "Tech Stack": "Angular, TypeScript, RxJS, REST, Firebase",
+      "Live": "https://web.freehourapp.com"
     },
     "process": [
       {
         "step": 1,
-        "title": "Architecture & State Management",
-        "description": "Established a robust component-based architecture using Angular and RxJS to efficiently manage local state, complex calendar rendering, and asynchronous data streams."
+        "title": "Timetables",
+        "description": "Swipeable timetable UI for lectures, tasks, and exams, with academic countdowns."
       },
       {
         "step": 2,
-        "title": "Timetable & Calendar Engineering",
-        "description": "Developed dynamic timetable interfaces that parse complex recurring rules, calculate lecture gaps, and seamlessly integrate cross-referenced scheduling logic."
+        "title": "Who’s Free",
+        "description": "Matching against friends’ calendars so students can see shared free slots."
       },
       {
         "step": 3,
-        "title": "Social Scheduling Algorithm",
-        "description": "Implemented the 'Who's Free' algorithm, comparing user lecture endpoints and friends' schedules to precisely identify and display mutual free slots during the day."
+        "title": "Calendar sync",
+        "description": "Google Calendar sync plus friend and discover flows."
       },
       {
         "step": 4,
-        "title": "Real-time Tracking & Features",
-        "description": "Integrated complete student toolsets including attendance tracking, modular countdowns for assignments, and profile configurations, persisting data securely with Firebase."
+        "title": "Campus extras",
+        "description": "Student offers and jobs alongside the core academic and social product."
       }
     ],
-    "toolsDescription": "To guarantee smooth performance across a wide range of devices, we utilized Angular's reactive paradigms. The web app integrates heavily with RxJS for handling real-time friend states and complex timetable stream logic, paired with Firebase for reliable cloud synchronization.",
+    "toolsDescription": "Angular frontend with TypeScript, RxJS, REST, and Firebase, including Google Calendar sync.",
     "tools": {
-      "Frontend": [
-        "Angular 20",
-        "TypeScript",
-        "HTML5",
-        "CSS3"
-      ],
-      "Services": [
-        "Firebase",
-        "Authentication",
-        "Google Calendar Sync"
-      ],
-      "Tooling": [
-        "RxJS",
-        "Karma",
-        "Jasmine",
-        "Angular CLI"
-      ]
+      "Frontend": ["Angular", "TypeScript", "RxJS"],
+      "Services": ["REST", "Firebase", "Google Calendar"],
+      "Product": ["Timetables", "Who’s Free", "Offers & jobs"]
     },
     "metrics": [
-      {
-        "label": "Social Engagement",
-        "value": "High"
-      },
-      {
-        "label": "Core Features",
-        "value": "10+"
-      },
-      {
-        "label": "Performance Rating",
-        "value": "Seamless"
-      },
-      {
-        "label": "Platform",
-        "value": "Web App"
-      }
+      { "label": "Audience", "value": "Malta students" },
+      { "label": "Stack", "value": "Angular" },
+      { "label": "Social", "value": "Who’s Free" },
+      { "label": "Live", "value": "Web app" }
     ]
   },
   {
-    "id": "smart-inventory-pos",
-    "title": "Smart Inventory & POS System",
-    "category": "Mobile App Development",
-    "year": "2024",
-    "heroImage": "assets/img/portfolio/portfolio-10.webp",
-    "gallery": [
-      "assets/img/portfolio/portfolio-8.webp",
-      "assets/img/portfolio/portfolio-9.webp",
-      "assets/img/portfolio/portfolio-11.webp"
-    ],
-    "sliderimages": [
-      "assets/img/portfolio/portfolio-8.webp",
-      "assets/img/portfolio/portfolio-9.webp",
-      "assets/img/portfolio/portfolio-10.webp",
-      "assets/img/portfolio/portfolio-11.webp"
-    ],
-    "summary": "Full-featured Inventory Management and Point-of-Sale (POS) application built with Flutter. It streamlines product management, sales processing via QR code scanning, dynamic PDF receipt generation, and Bluetooth thermal printing. The app features robust analytics using Syncfusion Charts and ensures secure offline-first functionality utilizing SQLite, backed by Firebase for seamless cloud synchronization.",
-    "tags": ["Flutter", "Dart", "Firebase", "Provider", "SQLite", "GetX", "POS", "Bluetooth Printing"],
+    "id": "azora",
+    "title": "Azora",
+    "category": "Flutter · Mobile",
+    "year": "2025",
+    "url": "https://play.google.com/store/apps/details?id=mt.azora.app",
+    "heroImage": "",
+    "gallery": [],
+    "sliderimages": [],
+    "summary": "Flutter client for a Malta accounting SaaS used by company contacts of an accounting firm. Multi-tenant accounting client with OTP/MFA, offline document capture, realtime AI invoice updates, VAT returns, and in-app payments.",
+    "tags": ["Flutter", "BLoC", "Dio", "Hive", "Socket.IO", "WebView"],
     "content": [
       {
         "heading": "Project Overview",
         "paragraphs": [
-          "The Smart Inventory & POS System is an all-in-one mobile app designed to optimize retail and warehouse operations. It empowers users with real-time store monitoring and frictionless daily sales by providing an intuitive user interface for managing a product catalog, adjusting quantities, and ringing up customers directly from a mobile device.",
-          "Technically, the platform operates on a robust offline-first architecture using SQLite, ensuring zero downtime during sales. It incorporates state management utilizing Provider to handle complex cart logic and data synchronization. The complete sales lifecycle is covered, including rapid item lookups via QR code scanning, instant Bluetooth thermal invoice (facture) printing, and comprehensive business reporting populated by visually rich Syncfusion charts."
+          "Azora is a Flutter client for a Malta accounting SaaS, used by company contacts of an accounting firm. I built the multi-tenant mobile app: OTP/MFA login, multi-company switching, offline document capture with Hive sync, Socket.IO updates for AI-processed invoices, VAT and tax-return workflows, and in-app WebView payments.",
+          "State is BLoC; networking is Dio; local capture syncs through Hive; realtime invoice status arrives over Socket.IO; payments run in an in-app WebView with secure storage for session material."
         ]
       }
     ],
     "specs": {
-      "Client": "Independent Retailers / SMEs",
-      "Timeline": "Continuous Development",
-      "Role": "Lead Mobile Developer",
-      "Team": "Solo Developer",
-      "Deliverables": "Android and iOS Application",
-      "Tech Stack": "Flutter, Dart, Firebase, SQLite, Provider"
+      "Client": "Jett Labs / Azora",
+      "Platform": "iOS & Android",
+      "Role": "Mobile/Frontend Engineer",
+      "Deliverables": "Accounting mobile client",
+      "Tech Stack": "Flutter, BLoC, Dio, Hive, Socket.IO, WebView, secure storage",
+      "Live": "https://play.google.com/store/apps/details?id=mt.azora.app"
     },
     "process": [
       {
         "step": 1,
-        "title": "Architecture & State Management",
-        "description": "Established an offline-first foundation with SQLite for secure local persistence and rapid inventory adjustments, coupled with Provider for scalable state management across screens."
+        "title": "Auth and tenancy",
+        "description": "OTP/MFA login and multi-company switching for accounting-firm contacts."
       },
       {
         "step": 2,
-        "title": "POS & Sales Integration",
-        "description": "Implemented a high-fidelity point-of-sale workflow, introducing rapid QR code scanning for product lookup and dynamic cart processing within the centralized Cash and Sales screens."
+        "title": "Offline capture",
+        "description": "Document capture on device with Hive sync when connectivity returns."
       },
       {
         "step": 3,
-        "title": "Hardware Interactions",
-        "description": "Engineered custom utility bridges to enable immediate remote Bluetooth thermal receipt printing, as well as robust dynamic PDF generation for invoices using the local file system."
+        "title": "Realtime invoices",
+        "description": "Socket.IO updates as invoices are processed by the AI pipeline."
       },
       {
         "step": 4,
-        "title": "Analytics & Cloud Sync",
-        "description": "Integrated rich analytical dashboards incorporating Syncfusion charts for advanced sales and inventory reporting. Configured Firebase to handle secure cloud storage, optional remote database backups, and push notifications."
+        "title": "Tax and payments",
+        "description": "VAT and tax-return workflows, with in-app WebView payments and secure storage."
       }
     ],
-    "toolsDescription": "To guarantee lightning-fast operations at the checkout counter, the application relies on an efficient local SQLite database. Flutter provided the ideal cross-platform framework to smoothly integrate hardware functionalities, such as the device camera for fast barcode scanning and Bluetooth peripherals for instant physical receipt printing.",
+    "toolsDescription": "Flutter accounting client with BLoC, Dio, Hive, Socket.IO, WebView, and secure storage.",
     "tools": {
-      "Frontend": ["Flutter", "Dart", "Syncfusion Charts", "Lottie"],
-      "Services": ["Firebase Auth", "Firestore", "Firebase Messaging"],
-      "Tooling": ["Provider", "GetX", "SQLite", "QR Scanner", "ESC/POS Utils"]
+      "Mobile": ["Flutter", "Dart", "BLoC", "Dio"],
+      "Data": ["Hive", "Secure storage"],
+      "Integrations": ["Socket.IO", "WebView payments"]
     },
     "metrics": [
-      { "label": "Offline Capability", "value": "100%" },
-      { "label": "Checkout Speed", "value": "Sub-second" },
-      { "label": "Hardware Support", "value": "Printers, Scanners" },
-      { "label": "Core Features", "value": "10+" }
-    ]
-  },
-  {
-    "id": "omniprop-enterprise",
-    "title": "OmniProp – High-Concurrency Property Ecosystem",
-    "category": "Mobile & Web Engineering",
-    "year": "2026",
-    "heroImage": "assets/img/portfolio/omniprop/hero.png",
-    "gallery": [
-      "assets/img/portfolio/portfolio-8.webp",
-      "assets/img/portfolio/portfolio-9.webp",
-      "assets/img/portfolio/portfolio-11.webp"
-    ],
-    "sliderimages": [
-      "assets/img/portfolio/portfolio-8.webp",
-      "assets/img/portfolio/portfolio-9.webp",
-      "assets/img/portfolio/portfolio-10.webp",
-      "assets/img/portfolio/portfolio-11.webp"
-    ],
-    "summary": "A robust, multi-tenant property management ecosystem designed for high-concurrency environments. It features an offline-first Flutter mobile application for field agents and a sophisticated Angular 19+ admin dashboard, focused on complex data synchronization and financial auditing.",
-    "tags": ["Flutter", "Angular", "Drift/SQLite", "NgRx", "Signals", "Conflict Resolution"],
-    "content": [
-      {
-        "heading": "Project Overview",
-        "paragraphs": [
-          "OmniProp addresses the critical challenge of maintaining data integrity across distributed field teams and centralized administrative offices. The mobile component is engineered for 100% offline functionality in low-connectivity areas, using a sophisticated local-first architecture. This ensures that property inspections, maintenance logs, and tenant interactions are never interrupted.",
-          "On the web, the platform leverages Angular’s reactive Signals and NgRx for enterprise-scale state management. It provides real-time financial oversight, heat-mapped maintenance analytics, and automated lease lifecycle management. The core innovation lies in its Conflict-Free Replicated Data (CRDT) inspired sync engine, which gracefully handles simultaneous edits from multiple stakeholders."
-        ]
-      }
-    ],
-    "specs": {
-      "Client": "Enterprise Real Estate Firms",
-      "Timeline": "12 Weeks (Initial MVP)",
-      "Role": "Senior Systems Architect",
-      "Team": "2 Members",
-      "Deliverables": "iOS/Android Agent App, Web Admin Portal",
-      "Tech Stack": "Flutter, Angular, Drift, Supabase"
-    },
-    "process": [
-      {
-        "step": 1,
-        "title": "Local-First Architecture",
-        "description": "Implemented Drift (SQLite) with a reactive repository pattern in Flutter to ensure zero-latency UI updates while managing a complex background sync queue for offline data."
-      },
-      {
-        "step": 2,
-        "title": "Sync Engine & Conflict Resolution",
-        "description": "Designed a custom reconciliation logic using version stamping and 'Last Write Wins' strategies to resolve data collisions between mobile field updates and web-based administrative changes."
-      },
-      {
-        "step": 3,
-        "title": "Reactive Admin Dashboard",
-        "description": "Utilized Angular Signals and NgRx to build a high-performance web interface capable of streaming real-time IoT sensor data and financial metrics without UI jank."
-      },
-      {
-        "step": 4,
-        "title": "Multi-Tenant Security",
-        "description": "Engineered a strict Row-Level Security (RLS) layer in the backend, coupled with Angular route guards, to ensure complete data isolation between different property firms."
-      }
-    ],
-    "toolsDescription": "Engineered for maximum reliability, utilizing Flutter for native-performance mobile experiences and Angular for scalable web management. The stack prioritizes data consistency through Drift and reactive state management.",
-    "tools": {
-      "Mobile": ["Flutter", "Drift (SQLite)", "Method Channels"],
-      "Web": ["Angular 19", "NgRx", "Signals", "Tailwind"],
-      "Infrastructure": ["Supabase", "Edge Functions", "Docker"]
-    },
-    "metrics": [
-      { "label": "Offline Reliability", "value": "100%" },
-      { "label": "Sync Latency", "value": "Sub-2s" },
-      { "label": "Data Integrity", "value": "99.99%" },
-      { "label": "Scale", "value": "Multi-Tenant" }
-    ]
-  },
-  {
-    "id": "sentinel-iot",
-    "title": "Sentinel – IoT Security & Hardware Orchestrator",
-    "category": "Hardware-Software Integration",
-    "year": "2026",
-    "heroImage": "assets/img/portfolio/sentinel/hero.png",
-    "gallery": [
-      "assets/img/portfolio/portfolio-8.webp",
-      "assets/img/portfolio/portfolio-9.webp",
-      "assets/img/portfolio/portfolio-11.webp"
-    ],
-    "sliderimages": [
-      "assets/img/portfolio/portfolio-8.webp",
-      "assets/img/portfolio/portfolio-9.webp",
-      "assets/img/portfolio/portfolio-10.webp",
-      "assets/img/portfolio/portfolio-11.webp"
-    ],
-    "summary": "A high-security orchestration platform that bridges physical hardware with digital controls. Sentinel utilizes Native Mobile SDKs (Swift/Kotlin) for BLE and NFC communication, paired with a real-time Angular Command Center for campus-wide security monitoring and device provisioning.",
-    "tags": ["Swift", "Kotlin", "NFC/BLE", "Angular", "WebSockets", "Biometric Auth"],
-    "content": [
-      {
-        "heading": "Project Overview",
-        "paragraphs": [
-          "Sentinel is a deep-tech project demonstrating the integration of mobile devices with physical security hardware. The mobile application bypasses high-level wrappers in favor of custom Native Method Channels, allowing direct communication with Smart Locks via Bluetooth Low Energy (BLE) and NFC protocols.",
-          "The system is governed by a Zero-Trust security model, requiring multi-factor biometric authentication for hardware interaction. The web dashboard acts as a central nervous system, providing live-streaming security logs via WebSockets and a robust provisioning interface for deploying new hardware nodes across a network. This project highlights the transition from standard app development to systems engineering."
-        ]
-      }
-    ],
-    "specs": {
-      "Client": "Commercial Security Providers",
-      "Timeline": "12 Weeks",
-      "Role": "Lead Systems Engineer",
-      "Team": "Solo / Independent",
-      "Deliverables": "Security Mobile Client, Web Command Center",
-      "Tech Stack": "Native Swift/Kotlin, Flutter, Angular, Node.js"
-    },
-    "process": [
-      {
-        "step": 1,
-        "title": "Native Hardware Bridging",
-        "description": "Developed custom Swift and Kotlin modules to interface directly with the device's NFC and BLE hardware, exposing these capabilities to the Flutter UI via Method Channels."
-      },
-      {
-        "step": 2,
-        "title": "Biometric & Cryptographic Security",
-        "description": "Integrated LocalAuthentication (iOS) and BiometricPrompt (Android) to secure hardware commands, combined with AES-256 encryption for all data in transit."
-      },
-      {
-        "step": 3,
-        "title": "Real-time Event Orchestration",
-        "description": "Built a WebSocket-driven Angular frontend that monitors hardware state changes globally, providing immediate visual feedback and audit trails for every security event."
-      },
-      {
-        "step": 4,
-        "title": "DevOps & Hardware Simulation",
-        "description": "Established a CI/CD pipeline for automated native testing and created a virtualized 'Hardware Mock' server to test system responses to varying sensor inputs."
-      }
-    ],
-    "toolsDescription": "The focus was on hardware-level control and security. By utilizing Native SDKs for communication and Angular for the monitoring hub, we ensured a low-latency, high-security bridge between the user and the physical world.",
-    "tools": {
-      "Native": ["Swift", "Kotlin", "CoreBluetooth", "NFCManager"],
-      "Frontend": ["Flutter", "Angular", "RxJS"],
-      "Real-time": ["WebSockets", "MQTT", "Node.js"]
-    },
-    "metrics": [
-      { "label": "Hardware Latency", "value": "<150ms" },
-      { "label": "Security Model", "value": "Zero-Trust" },
-      { "label": "Native Coverage", "value": "Deep" },
-      { "label": "Uptime", "value": "99.9%" }
+      { "label": "Tenancy", "value": "Multi-company" },
+      { "label": "Auth", "value": "OTP / MFA" },
+      { "label": "Capture", "value": "Offline + Hive" },
+      { "label": "Distribution", "value": "Play Store" }
     ]
   }
 ]

@@ -1,6 +1,6 @@
 # Isaac Onah
 
-Personal site for Isaac Onah, Senior Mobile and Frontend Engineer. Flutter, native mobile, and Angular. Based in Malta.
+Personal site for Isaac Onah, mobile and frontend engineer. Flutter, native mobile, Angular, and React. Based in Malta.
 
 The layout, navigation, and copy on this site are original. This is not a third-party theme.
 
