@@ -1749,6 +1749,26 @@ section,
   margin-bottom: 1.5rem;
 }
 
+.resume .professional-journey .experience-timeline .timeline-item .timeline-content p.role-lead {
+  margin-bottom: 0.85rem;
+}
+
+.resume .professional-journey .experience-timeline .timeline-item .timeline-content .timeline-bullets {
+  margin: 0 0 1.25rem;
+  padding-left: 1.15rem;
+}
+
+.resume .professional-journey .experience-timeline .timeline-item .timeline-content .timeline-bullets li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  margin-bottom: 0.5rem;
+}
+
+.resume .professional-journey .experience-timeline .timeline-item .timeline-content .timeline-bullets li:last-child {
+  margin-bottom: 0;
+}
+
 .resume .professional-journey .experience-timeline .timeline-item .timeline-content .key-achievements {
   display: flex;
   flex-wrap: wrap;
@@ -3045,6 +3065,16 @@ section,
   color: var(--heading-color);
   margin-bottom: 0;
   font-weight: 400;
+}
+
+.portfolio-details .content-section .project-specs .spec-item a {
+  color: var(--accent-color);
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.portfolio-details .content-section .project-specs .spec-item a:hover {
+  text-decoration: underline;
 }
 
 .portfolio-details .process-timeline {
@@ -4543,6 +4573,32 @@ section {
 
 .portfolio .portfolio-card:hover .portfolio-cta i {
   transform: translate(2px, -2px);
+}
+
+.portfolio .portfolio-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0 1.4rem 1.25rem;
+  font-family: var(--nav-font);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--default-color), transparent 18%);
+  text-decoration: none;
+}
+
+.portfolio .portfolio-live:hover {
+  color: var(--accent-color);
+}
+
+.portfolio .portfolio-card.featured .portfolio-live {
+  padding: 0 2rem 1.5rem;
+}
+
+.portfolio .portfolio-card.compact .portfolio-live {
+  padding: 0 1.3rem 1.25rem;
 }
 
 .portfolio .portfolio-card.featured .portfolio-card-link {
